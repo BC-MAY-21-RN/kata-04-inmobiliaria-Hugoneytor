@@ -1,3 +1,70 @@
 {
-    
+    "Houses":[
+        {
+            "id":"1",
+            "name": "The Willows",
+            "address": "3517 W. Gray St. Utica",
+            "rooms": "3",
+            "bathrooms": "2",
+            "feets": "230 ft",
+            "price": "$440/m",
+            "ratings": "4.7",
+            "img": "https://mediavault.point2.com/p2h/listing/c6af/e4b9/47fc/d69503cdaa05a282a54d/nwm_large.jpg"
+        },
+        {
+            "id":"2",
+            "name": "Orchard House",
+            "address": "3517 W. Gray St. Utica",
+            "rooms": "3",
+            "bathrooms": "2",
+            "feets": "230 ft",
+            "price": "$440/m",
+            "ratings": "4.5",
+            "img": "https://media.admagazine.com/photos/618a6a06b94700461d6215ae/master/w_1600%2Cc_limit/62692.jpg"
+        },
+        {
+            "id":"3",
+            "name": "Mazamitla",
+            "address": "3517 W. Gray St. Utica",
+            "rooms": "3",
+            "bathrooms": "2",
+            "feets": "230 ft",
+            "price": "$440/m",
+            "ratings": "5.0",
+            "img": "https://cdn.forbes.com.mx/2021/07/Mazamitla-Pueblo-Ma%CC%81gico-e1626201250705.jpg"
+        },
+        {
+            "id":"4",
+            "name": "Comala",
+            "address": "3517 W. Gray St. Utica",
+            "rooms": "3",
+            "bathrooms": "2",
+            "feets": "230 ft",
+            "price": "$440/m",
+            "ratings": "4.8",
+            "img": "https://www.travelreport.mx/wp-content/uploads/2018/07/Qu%C3%A9-visitar-en-Comala-el-pueblo-blanco-de-Colima-4.jpg"
+        },
+        {
+            "id":"5",
+            "name": "Tulum",
+            "address": "3517 W. Gray St. Utica",
+            "rooms": "3",
+            "bathrooms": "2",
+            "feets": "230 ft",
+            "price": "$440/m",
+            "ratings": "4.9",
+            "img": "https://media-cdn.tripadvisor.com/media/photo-s/19/60/41/d1/hotel-ma-xanab-tulum.jpg"
+        },
+        {
+            "id":"6",
+            "name": "Oaxaca",
+            "address": "3517 W. Gray St. Utica",
+            "rooms": "3",
+            "bathrooms": "2",
+            "feets": "230 ft",
+            "price": "$440/m",
+            "ratings": "4.0",
+            "img": "https://planbviajero.com/wp-content/uploads/2020/11/plan-b-viajero-que-esta-abierto-en-oaxaca-actualmente-.png"
+        }
+    ]
 }
