@@ -1,5 +1,4 @@
-{
-    "Houses":[
+[
         {
             "id":"1",
             "name": "The Willows",
@@ -67,4 +66,3 @@
             "img": "https://planbviajero.com/wp-content/uploads/2020/11/plan-b-viajero-que-esta-abierto-en-oaxaca-actualmente-.png"
         }
     ]
-}

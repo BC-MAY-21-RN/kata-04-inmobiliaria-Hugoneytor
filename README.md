@@ -1,4 +1,4 @@
-[![Maintainability](https://api.codeclimate.com/v1/badges/37daaaa3ed1f357c890b/maintainability)](https://codeclimate.com/github/BC-MAY-21-RN/kata-04-inmobiliaria-Hugoneytor/maintainability)
+<a href="https://codeclimate.com/github/BC-MAY-21-RN/kata-04-inmobiliaria-Hugoneytor/maintainability"><img width="500" src="https://api.codeclimate.com/v1/badges/37daaaa3ed1f357c890b/maintainability" /></a>
 
 ![BrightCoders Logo](img/logo-bc.png)
 
