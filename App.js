@@ -1,23 +1,44 @@
 /* eslint-disable react/prop-types */
 import React from "react";
-import {Text, View, FlatList, ImageBackground, StyleSheet} from "react-native";
+import {Text, View, FlatList, ImageBackground, StyleSheet, Image} from "react-native";
 import hoteles from "./src/data.json";
 
-const Item = ({ id, name, address, rooms, bathrooms, feets, price, ratings, img }) => (
-    <View style={styles.container}>
+const Item = ({ name, address, rooms, bathrooms, feets, price, ratings, img }) => (
+    <View style={styles.card}>
+      <ImageBackground style={styles.containerOne} source={{uri:img}}>
+        <View style={styles.ratings}>
+          <Text style={styles.text}>
+            <Image style={styles.estrella} source={require("./src/assets/imgs/estrella.png")}/>
+          {ratings}
+          </Text>
+        </View>
+      </ImageBackground>
 
-        <ImageBackground style={styles.contenedorUno} source={{uri:img}}>
-          <Text>{ratings}</Text>
-        </ImageBackground>
+      <View style={styles.containerTwo}>
+        <Text style={styles.titulo}>{name}</Text>
+        <Text>
+          <Image style={styles.estrella} source={require("./src/assets/imgs/placeholder.png")}/>
+          {address}
+        </Text>
+        <View style={styles.rooms}>
+          <Text>
+            <Image style={styles.estrella} source={require("./src/assets/imgs/double-bed.png")}/>
+            {rooms}
+          </Text>
+          <Text>
+            <Image style={styles.estrella} source={require("./src/assets/imgs/bath-tub.png")}/>
+            {bathrooms}
+          </Text>
+          <Text>
+            <Image style={styles.estrella} source={require("./src/assets/imgs/length.png")}/>
+            {feets}
+          </Text>
+        </View>
+        <View style={styles.heart}>
+          <Text>{price}</Text>
+          <Image style={styles.estrella} source={require("./src/assets/imgs/heart2.png")}/>
+        </View>
 
-      <View style={styles.contenedorDos}>
-        <Text style={styles.Text}>{id}</Text>
-        <Text>{name}</Text>
-        <Text>{address}</Text>
-        <Text>{rooms}</Text>
-        <Text>{bathrooms}</Text>
-        <Text>{feets}</Text>
-        <Text>{price}</Text>
       </View>
     </View>
   );
@@ -27,7 +48,8 @@ const App = () => {
         <Item {...item} />
       );
     return (
-        <View>
+        <View style={styles.container}>
+          
             <FlatList
                 data={hoteles}
                 renderItem={renderItem}
@@ -39,22 +61,57 @@ const App = () => {
 
 const styles = StyleSheet.create({
   container:{
+    padding: 20,
+  },  
+  card:{
+    flex: 1,
     display: "flex",
     flexDirection: "row",
-    flex: 1,
-    padding: 20
-  },  
-  Text:{
-    color: "red"
-  },
-  contenedorUno:{
-    flex: 1.5,
+    backgroundColor:"#E5F9FE",
+    marginBottom: 10,
+    padding: 12,
     
+  },
+  containerOne:{
+    flex: 1,
     borderRadius: 30,
     overflow: "hidden",
+    marginRight: 15,
+    height: 120,
+    justifyContent: "flex-end",
+    alignItems: "center"
+    
   },
-  contenedorDos:{
-    flex: 2,
+  containerTwo:{
+    display: "flex",
+    flex: 1.2,
+    justifyContent: "space-between"
+  },
+  ratings:{
+    marginBottom: 5,
+    flexWrap: "wrap",
+    
+  },
+  text:{
+    fontWeight: "bold",
+    backgroundColor:"#F9E9AD",
+    padding: 5,
+    borderRadius: 15
+  },
+  rooms:{
+    flexDirection: "row",
+    display: "flex",
+    justifyContent: "space-between"
+  },
+  estrella:{
+    width:15,
+    height: 15,
+  },
+  heart:{
+    flexDirection: "row",
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center"
   }
 });
 
