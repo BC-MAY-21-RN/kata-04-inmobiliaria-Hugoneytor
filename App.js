@@ -15,27 +15,27 @@ const Item = ({ name, address, rooms, bathrooms, feets, price, ratings, img }) =
       </ImageBackground>
 
       <View style={styles.containerTwo}>
-        <Text style={styles.titulo}>{name}</Text>
+        <Text style={styles.title}>{name}</Text>
         <Text>
           <Image style={styles.estrella} source={require("./src/assets/imgs/placeholder.png")}/>
           {address}
         </Text>
         <View style={styles.rooms}>
-          <Text>
+          <Text style={styles.bold}>
             <Image style={styles.estrella} source={require("./src/assets/imgs/double-bed.png")}/>
             {rooms}
           </Text>
-          <Text>
+          <Text style={styles.bold}>
             <Image style={styles.estrella} source={require("./src/assets/imgs/bath-tub.png")}/>
             {bathrooms}
           </Text>
-          <Text>
+          <Text style={styles.bold}>
             <Image style={styles.estrella} source={require("./src/assets/imgs/length.png")}/>
             {feets}
           </Text>
         </View>
         <View style={styles.heart}>
-          <Text>{price}</Text>
+          <Text style={styles.title}>{price}</Text>
           <Image style={styles.estrella} source={require("./src/assets/imgs/heart2.png")}/>
         </View>
 
@@ -97,6 +97,13 @@ const styles = StyleSheet.create({
     backgroundColor:"#F9E9AD",
     padding: 5,
     borderRadius: 15
+  },
+  title:{
+    fontWeight: "bold",
+    fontSize: 18,
+  },
+  bold:{
+    fontWeight: "bold",
   },
   rooms:{
     flexDirection: "row",
